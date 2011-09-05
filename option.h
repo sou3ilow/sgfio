@@ -252,7 +252,7 @@ public:
 	type get(unsigned nth) const
 	{
 		if ( _ordered_value.size() < nth )
-			return std::range_error("too large index");
+			throw std::range_error("too large index");
 		
 		std::stringstream ss; ss << _ordered_value[nth];
 		type ret; ss >> ret;
