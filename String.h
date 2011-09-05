@@ -24,7 +24,6 @@ struct String
 
 	void join(const String& s)
 	{
-		// anchor = this->anchor; // keep value
 		positions.insert(s.positions.begin(), s.positions.end());
 		liberty.insert(s.liberty.begin(), s.liberty.end());
 	}
@@ -54,12 +53,6 @@ struct String
 	{
 		show(std::cerr);
 	}
-
-	/*friend
-	bool operator<(const String& a, const String& b)
-	{
-		return a.anchor() < b.anchor();
-	}*/
 };
 
 #endif//STRING_H

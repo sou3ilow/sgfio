@@ -99,7 +99,7 @@ public:
 			else if ( y == Size - 5 ) os << "  black: " << captures[BLACK] << "\n";
 			else if ( y == Size - 4 ) os << "  white: " << captures[WHITE] << "\n";
 			else if ( y == Size - 2 ) os << "  ply  : " << ply << "\n";
-			else if ( y == Size - 1 )   os << "  last : " << pos2gtp(last_move) << "\n";
+			else if ( y == Size - 1 ) os << "  last : " << pos2gtp(last_move) << "\n";
 			else if ( y == Size - 0 ) os << "  trun : " << player(turn) << "\n";
 			else                      os << "\n";
 		}
